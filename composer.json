@@ -1,0 +1,29 @@
+{
+    "name": "faris/pdf-generator",
+    "description": "a package that generate pdf using php",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "PdfGenerator\\": "src/",
+            "PdfGenerator\\Templates\\": "templates/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "PdfGenerator\\Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "faris"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^7.0 || ^8.0 || ^8.1",
+        "dompdf/dompdf": "dev-master",
+        "phpunit/phpunit": "^9.0",
+        "illuminate/view": "10.x-dev"
+    }
+}
